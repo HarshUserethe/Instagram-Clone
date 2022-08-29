@@ -254,22 +254,22 @@ var post = document.querySelector(".post")
  
 
  
-document.querySelector("#dark").addEventListener("click",function(dets, list){
+// document.querySelector("#dark").addEventListener("click",function(dets, list){
  
-    document.querySelector("#dark").style.display = "none"
-    document.querySelector("#sun").style.display = "initial"
-    nav.style.backgroundColor = "#413F42"
-    modes.style.backgroundColor = "#fff"
-    i1.style.color = "#fff"
-    i2.style.color = "#fff"
-    i3.style.color = "#fff"
-    i4.style.color = "#fff"
-    i5.style.color = "#fff"
-    i6.style.color = "#fff"
-    body.style.backgroundColor = "#413F42" 
-    post.style.backgroundColor = "#413F42" 
-    document.querySelector("#sun").style.color = "#fff"
-    document.querySelector(".story>p").style.color = "#fff"
+//     document.querySelector("#dark").style.display = "none"
+//     document.querySelector("#sun").style.display = "initial"
+//     nav.style.backgroundColor = "#413F42"
+//     modes.style.backgroundColor = "#fff"
+//     i1.style.color = "#fff"
+//     i2.style.color = "#fff"
+//     i3.style.color = "#fff"
+//     i4.style.color = "#fff"
+//     i5.style.color = "#fff"
+//     i6.style.color = "#fff"
+//     body.style.backgroundColor = "#413F42" 
+//     post.style.backgroundColor = "#413F42" 
+//     document.querySelector("#sun").style.color = "#fff"
+//     document.querySelector(".story>p").style.color = "#fff"
     
     
     
@@ -284,16 +284,28 @@ document.querySelector("#dark").addEventListener("click",function(dets, list){
 
      
       
+// })
+// document.querySelector("#sun").addEventListener("click",function(){
+ 
+//     document.querySelector("#sun").style.display = "none"
+//     document.querySelector("#dark").style.display = "initial" 
+// })
+
+
+
+
+
+var chat = document.querySelector("#chat-overlay");
+
+
+
+document.querySelector("#i2").addEventListener("click", function(){
+        chat.style.left = "0%";
+        chat.style.display = "flex";
 })
-document.querySelector("#sun").addEventListener("click",function(){
- 
-    document.querySelector("#sun").style.display = "none"
-    document.querySelector("#dark").style.display = "initial" 
+
+
+
+document.querySelector("#back").addEventListener("click", function(){
+    chat.style.left = "100%";
 })
-
-
-
-
- 
-
- 
