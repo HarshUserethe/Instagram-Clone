@@ -300,12 +300,13 @@ var chat = document.querySelector("#chat-overlay");
 
 
 document.querySelector("#i2").addEventListener("click", function(){
-        chat.style.left = "0%";
+        // chat.style.left = "0%";
         chat.style.display = "flex";
 })
 
 
 
 document.querySelector("#back").addEventListener("click", function(){
-    chat.style.left = "100%";
+    // chat.style.left = "100%";
+    chat.style.display = "none";
 })
